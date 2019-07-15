@@ -1,0 +1,30 @@
+library ieee;
+use ieee.std_logic_1164.all;
+entity top is
+port ( a: in std_logic;
+c: in std_logic;
+b: in std_logic;
+f: out std_logic
+);
+end top;
+architecture top_map of top is 
+signal f1,f2,f3: std_logic;
+component c1
+port();
+end component;
+
+component c1
+port();
+end component;
+
+component c1
+port();
+end component;
+
+component c1
+port();
+end component;
+component c1
+port();
+end component
+ 
