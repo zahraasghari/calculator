@@ -1,0 +1,14 @@
+library ieee;
+use ieee.std_logic_1164.all;
+entity c2 is
+port ( a: in std_logic;
+
+b: in std_logic;
+f: out std_logic
+);
+end c2;
+architecture c2_estr of c2 is 
+begin
+f <= a xor b;
+end c2_estr;
+ 

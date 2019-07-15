@@ -1,0 +1,15 @@
+library ieee;
+use ieee.std_logic_1164.all;
+entity c3 is
+port ( a: in std_logic;
+c: in std_logic;
+b: in std_logic;
+f: out std_logic
+);
+end c3;
+architecture c3_estr of c3 is 
+begin
+
+f <= ( b or c ) and (not a);
+end c3_estr;
+ 

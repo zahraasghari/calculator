@@ -1,0 +1,28 @@
+library ieee;
+library ieee.std_logic_1164.all;
+entity decoder is
+port(
+c: in std_logic_vector(3 downto 0)
+f: out std_logic_vector (7 downto 0)
+);
+end decoder;
+architecture decoder_bhv for decoder is
+begin
+f<= "1000000" when c="0000" else
+    "1111001" when c="0001" else
+	 "0100100" when c="0010" else
+	 "0110000" when c="0011" else
+	 "0011001" when c="0100" else
+	 "0010010" when c="0101" else
+	 "0000010" when c="0110" else
+	 "1111000" when c="0111" else
+	 "0000000" when c="1000" else
+	 "0010000" when c="1001" else
+	 "0001000" when c="1010" else
+	 "0000011" when c="1011" else
+	 "1000110" when c="1100" else
+	 "0100001" when c="1101" else
+	 "0000110" when c="1110" else
+	 "0001110";
+	 end decoder_bhv;
+	 
